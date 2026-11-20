@@ -1,0 +1,355 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f7f8fb;
+    color: #172033;
+    font-family: 'DM Sans', sans-serif;
+    line-height: 1.7;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 8%;
+    background: #ffffff;
+    border-bottom: 1px solid #e8ebf1;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: 800;
+    color: #263858;
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #596579;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+nav a:hover {
+    color: #6474dc;
+}
+
+.hero {
+    min-height: 620px;
+    padding: 100px 8%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 50px;
+    background: radial-gradient(
+        circle at 85% 50%,
+        #e5eaff,
+        #f7f8fb 45%
+    );
+}
+
+.subtitle {
+    color: #6474dc;
+    font-size: 11px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+.hero h1 {
+    font-family: 'Manrope', sans-serif;
+    font-size: clamp(48px, 6vw, 76px);
+    line-height: 1.1;
+    letter-spacing: -3px;
+}
+
+.hero h2 {
+    color: #66738a;
+    font-size: 22px;
+    margin: 15px 0 25px;
+    font-weight: 500;
+}
+
+.description {
+    max-width: 550px;
+    color: #657085;
+    font-size: 14px;
+    line-height: 2;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 14px 23px;
+    background: #293d65;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.button:hover {
+    background: #5367a0;
+}
+
+.hero-graphic {
+    display: flex;
+    justify-content: center;
+}
+
+.code-card {
+    width: 100%;
+    max-width: 430px;
+    background: #192740;
+    border-radius: 12px;
+    padding: 25px;
+    color: #dce5f7;
+    box-shadow: 0 25px 60px #172b4a30;
+    transform: rotate(2deg);
+}
+
+.code-title {
+    color: #91a1bd;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.code-card pre {
+    font-size: 13px;
+    line-height: 2;
+    white-space: pre-wrap;
+}
+
+.code-card pre span {
+    color: #bda5ff;
+}
+
+.section {
+    padding: 100px 8%;
+}
+
+.section h2 {
+    font-family: 'Manrope', sans-serif;
+    font-size: clamp(34px, 4vw, 48px);
+    letter-spacing: -2px;
+    margin-bottom: 45px;
+}
+
+.section h2 span {
+    color: #6474dc;
+}
+
+#work {
+    background: white;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.project {
+    border: 1px solid #e8ebf1;
+    border-radius: 8px;
+    overflow: hidden;
+    padding-bottom: 22px;
+    transition: 0.3s;
+}
+
+.project:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 35px #17203312;
+}
+
+.project-image {
+    height: 210px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 22px;
+}
+
+.project-image span {
+    font-size: 10px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.project-image h3 {
+    font-family: 'Manrope', sans-serif;
+    font-size: 21px;
+}
+
+.java-image {
+    background: #eaf0f8;
+    color: #354c73;
+}
+
+.web-image {
+    background: #edeffc;
+    color: #5361a5;
+}
+
+.grade-image {
+    background: #eaf3ee;
+    color: #427a62;
+}
+
+.project > h3,
+.project > p,
+.project .tags {
+    margin-left: 22px;
+    margin-right: 22px;
+}
+
+.project > h3 {
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+.project > p {
+    color: #748095;
+    font-size: 12px;
+    line-height: 1.9;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 18px;
+}
+
+.tags span {
+    padding: 5px 9px;
+    background: #f0f2f8;
+    border-radius: 4px;
+    color: #65718a;
+    font-size: 10px;
+}
+
+.skills-section {
+    background: #f7f8fb;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.skill {
+    background: white;
+    border: 1px solid #e8ebf1;
+    padding: 25px;
+    border-radius: 7px;
+}
+
+.skill h3 {
+    font-family: 'Manrope', sans-serif;
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+
+.skill p {
+    color: #778195;
+    font-size: 12px;
+    line-height: 1.9;
+}
+
+.about {
+    background: #1b2942;
+    color: white;
+}
+
+.about h2 {
+    max-width: 800px;
+    margin-bottom: 25px;
+}
+
+.about p:last-child {
+    color: #bac4d5;
+    max-width: 780px;
+    font-size: 14px;
+    line-height: 2;
+}
+
+footer {
+    text-align: center;
+    padding: 45px 20px;
+    background: #141f34;
+    color: #aab5c7;
+}
+
+footer h3 {
+    color: white;
+    font-family: 'Manrope', sans-serif;
+    margin-bottom: 8px;
+}
+
+footer p {
+    font-size: 11px;
+    margin-top: 8px;
+}
+
+@media (max-width: 850px) {
+    .hero {
+        grid-template-columns: 1fr;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        padding: 18px 6%;
+    }
+
+    nav {
+        gap: 12px;
+    }
+
+    nav a {
+        font-size: 10px;
+    }
+
+    .hero {
+        padding: 70px 7%;
+    }
+
+    .section {
+        padding: 70px 7%;
+    }
+
+    .project-grid,
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+    }
+}
